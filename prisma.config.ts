@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { defineConfig, env } from "prisma/config";
 
 export default defineConfig({
@@ -7,6 +8,9 @@ export default defineConfig({
   },
   engine: "classic",
   datasource: {
-    url: env("DATABASE_URL"),
+    // 通常のアプリケーション接続にはDATABASE_URLを使用する
+    // url: env("DATABASE_URL"),
+    // DIRECT_URLはマイグレーション用に使用する
+    url: env("DIRECT_URL"),
   },
 });
