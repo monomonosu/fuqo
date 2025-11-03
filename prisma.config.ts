@@ -9,8 +9,8 @@ export default defineConfig({
   engine: "classic",
   datasource: {
     // 通常のアプリケーション接続にはDATABASE_URLを使用する
-    url: env("DATABASE_URL"),
+    // url: env("DATABASE_URL"),
     // DIRECT_URLはマイグレーション用に使用する
-    // url: env("DIRECT_URL"),
+    url: env("DIRECT_URL"),
   },
 });
