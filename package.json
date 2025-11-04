@@ -23,11 +23,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "lefthook": "^2.0.2",
     "prisma": "^6.18.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
   "volta": {
-		"node": "22.21.0"
-	}
+    "node": "22.21.0"
+  }
 }
