@@ -20,7 +20,10 @@
       "recommended": true,
       "suspicious": {
         "noUnknownAtRules": "off"
-      }
+      },
+      "correctness": {
+				"noUnusedVariables": "error"
+			}
     },
     "domains": {
       "next": "recommended",
